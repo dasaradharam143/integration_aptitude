@@ -9,27 +9,27 @@ def option():
 
     value = ''
     if condition == '1':
-        value = '2 contestants diff distance.py'
+        value = 'two_contestants_with_different_distance.py'
     elif condition == '2':
-        value = '2 contestants for finding time.py'
+        value = 'two_contestants_for_finding_time.py'
     elif condition == '3':
-        value = '2 contestants to find distance by time.py'
+        value = 'two_contestants_to_find_distance_by_time.py'
     elif condition == '4':
-        value = '3 contestants same distance.py'
+        value = 'three_contestants_same_distance.py'
     elif condition == '5':
-        value = '3 contestants with 2 distances.py'
+        value = 'three_contestants_with_two_distances.py'
     elif condition == '6':
-        value = '3 different distances.py'
+        value = 'three_different_distances.py'
     elif condition == '7':
-        value = 'finding distance by speed ratios.py'
+        value = 'finding_distance_by_speed_ratios.py'
     elif condition == '8':
-        value = 'finding 2 speeds.py'
+        value = 'finding_two_speeds.py'
     elif condition == '9':
-        value = 'to find speed.py'
+        value = 'to_find_speed.py'
     elif condition == '10':
-        value = 'four members game.py'
+        value = 'members_game.py'
     elif condition == '11':
-        value = 'to find loss or win percent.py'
+        value = 'to_find_loss_or_win_percent.py'
 
     else:
         exit()
