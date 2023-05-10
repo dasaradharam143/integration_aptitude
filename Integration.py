@@ -19,7 +19,7 @@ def option():
     elif condition == '5':
         value = 'three_contestants_with_two_distances.py'
     elif condition == '6':
-        value = 'three_different_distances.py'
+        value = 'three_contestants_with_three_different_distances.py'
     elif condition == '7':
         value = 'finding_distance_by_speed_ratios.py'
     elif condition == '8':
