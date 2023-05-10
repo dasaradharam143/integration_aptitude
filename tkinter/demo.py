@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 def average_of_numbers():
     numbers = list(map(float, input('enter the numbers = ').split()))
     n = len(numbers)
@@ -47,3 +48,7 @@ elif given_situation == 'd':
     missing_numbers_case1()
 else:
     print('enter a valid input')
+=======
+import tkinter as tk
+from tkinter import *
+>>>>>>> origin/main
