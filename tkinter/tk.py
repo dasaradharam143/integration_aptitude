@@ -18,7 +18,8 @@ my_box1 = Entry(root)
 my_box1.pack()
 
 #creating a lable
-Label(root, text='', font=('Roboto', 15), fg='black').pack(pady=20)
+mylable = Label(root,text='', font=('Roboto',15),fg='black')
+mylable.pack(pady=10)
 
 #
 # my_box2 = Entry(root)
