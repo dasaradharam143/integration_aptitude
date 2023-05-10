@@ -11,7 +11,7 @@ def average():
     return call(['python','tk.py'])
 
 
-label = Label(root, text='Aptitude Topics', font=('bold', 18))
+label = Label(root, text ='Aptitude Topics', font=('bold', 18))
 label.pack(pady=10)
 
 button1 = Button(root, text='1.Averages', font=('roboto', 10), bg='sky blue',command=average)
