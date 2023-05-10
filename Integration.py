@@ -9,7 +9,6 @@ def option():
                       '\n 10) members_game 11)to_find_loss_or_win_percent'
                       '\n PRESS_0_TO_EXIT_enter_option = ')
 
-    value = ''
     if condition == '1':
         value = 'two_contestants_with_different_distance.py'
     elif condition == '2':
