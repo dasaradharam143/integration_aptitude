@@ -8,7 +8,7 @@ def function1(numbers,power):
     numbers_list =map(int,numbers.split())
     total = power_of_n(numbers_list, int(power))
     avg = sum(total) / len(total)
-    return f'total = {total} \n average = {sum(total)}/{len(total)} = {round(avg,4)}'
+    return f'total sum of numbers = {total} \n average of sum of power{power} of numbers = {sum(total)}/{len(total)} = {round(avg,4)}'
     # return sum(numbers_list)
 # a=[1,3,4,5]
 # b=4
