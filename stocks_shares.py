@@ -5,14 +5,14 @@ def find_cost_price():
     faceValue = float(input("Enter the FaceValue : "))
     discount = float(input("Enter the Discount : "))
     brokerage= float(input("Enter the Brokerage : "))
-    Cost_Price = float(faceValue - discount + brokerage)
-    print("costPrice : " + str(Cost_Price))
+    cost_price = float(faceValue - discount + brokerage)
+    print("costPrice : " + str(cost_price))
 
 
 def find_stock_value():
-    Selling_Price = float(input("Enter the SellingPrice : "))
+    selling_price = float(input("Enter the SellingPrice : "))
     brokerage = float(input("Enter the Brokerage : "))
-    Share_Value = float(Selling_Price - brokerage)
+    Share_Value = float(selling_price - brokerage)
     print("stockValue : " + str(Share_Value))
 
 

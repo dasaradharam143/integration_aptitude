@@ -7,9 +7,11 @@ root.geometry('600x600')
 
 
 def submit():
-    numbers = function1(my_box.get(), my_box1.get())
-    my_label.config(text=numbers)
-
+    try:
+        numbers = function1(my_box.get(), my_box1.get())
+        my_label.config(text=numbers)
+    except:
+        my_label.config(text='enter valid numbers and power')
 
 my_label1 = Label(root, text='enter numbers', font=('Roboto', 10), bg='orange')
 my_label1.pack(pady=10)
