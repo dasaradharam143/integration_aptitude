@@ -4,14 +4,16 @@ def A_beat_C():
     A=int(input("Winner distance of A= "))
     B=A-A_beat_B
     print(f'B covered distance = {A} - {A_beat_B} ')
+    print(f'B covered distance = {B}')
     b=int(input("Winning distance of b="))
     C=b-B_beat_C
     print(f'A covered distance ={b}-{B_beat_C}')
+    print(f'C covered distance = {C}')
     distance=(A/B*b/C)
     print(f'distance ={A}/{B}*{b}/{C}')
     A_beat_C=A-(A/distance)
     print(f'A beat C= {A}-{A}/{distance}')
-    return  A_beat_C
+    return A_beat_C
 
 def B_beat_C():
     B_beat_A=int(input("B beat A="))
