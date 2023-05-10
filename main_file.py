@@ -1,9 +1,10 @@
 from subprocess import call
 
+
 def option():
     condition = input('1)Average 2)Races and games'
-                  '\n3)stocks and shares'
-                '\nPRESS 0 TO EXIT enter option = ')
+                      '\n3)stocks and shares'
+                      '\nPRESS 0 TO EXIT enter option = ')
 
     value = ''
     if condition == '1':
@@ -19,10 +20,11 @@ def option():
 
 
 def openpyfile():
-    call(['python',option()])
+    call(['python', option()])
     print(' ')
     print('/////////////////////////////////////////////////////////')
     print(' ')
     openpyfile()
+
 
 openpyfile()
