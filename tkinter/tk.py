@@ -2,7 +2,7 @@ from tkinter import *
 from demo import *
 
 root = Tk()
-root.title('aptitude')
+root.title('average of sum of n powers of numbers')
 root.geometry('600x600')
 
 
