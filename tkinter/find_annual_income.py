@@ -12,7 +12,7 @@ def find_annual_income(val1, val2, val3, val4):
     face_value_of_one_share = float(val3)
     dividend = float(val4)
     annual_income = float((dividend / 100) * ((total_investment / investment_in_one_share) * face_value_of_one_share))
-    output.append(f'({val4} * {100} ')
+    output.append(f'\n({val4} / {100}) * (({val1} / {val2}) * {val3}) ')
     output.append(f'\nAnnual_Income : {annual_income} ')
     return output
 
