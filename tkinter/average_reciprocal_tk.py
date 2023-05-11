@@ -23,8 +23,10 @@ def submit():
     try:
         value = function1(my_box.get())
         my_label.config(text=' '.join(value))
-    except:
-        my_label.config(text='Enter valid numbers')
+
+    except Exception as err:
+        my_label.config(text=f'Enter valid numbers\nUnexpected {err=}')
+        # raise
 
 
 my_label1 = Label(root, text='enter numbers in denominators', font=('Roboto', 10), bg='orange')

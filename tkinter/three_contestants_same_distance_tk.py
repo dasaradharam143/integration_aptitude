@@ -27,8 +27,9 @@ def submit():
     try:
         value = three_contestants_same_distance(my_box1.get(), my_box2.get(), my_box3.get(), my_box4.get())
         my_label.config(text=' '.join(value))
-    except:
-        my_label.config(text='Enter valid numbers')
+
+    except Exception as err:
+        my_label.config(text=f'Enter valid numbers\nUnexpected {err=}')
 
 
 my_label1 = Label(root, text='a_beat_b', font=('Roboto', 10), bg='orange')

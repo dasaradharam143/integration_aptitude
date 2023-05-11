@@ -31,8 +31,8 @@ def submit():
                                                    my_box5.get())
         my_label.config(text=' '.join(value))
 
-    except:
-        my_label.config(text='Enter valid numbers')
+    except Exception as err:
+        my_label.config(text=f'Enter valid numbers\nUnexpected {err=}')
 
 
 my_label1 = Label(root, text='total_income', font=('Roboto', 10), bg='orange')

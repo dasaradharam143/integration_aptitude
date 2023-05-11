@@ -7,7 +7,7 @@ root.title(' find_interest_obtained_on_faceValue')
 root.geometry('600x600')
 
 
-def find_interest_obtained_on_faceValue(val1, val2, val3, val4):
+def find_interest_obtained_on_face_value(val1, val2, val3, val4):
     output = []
     number_of_shares = float(val1)
     each_share_value = float(val2)
@@ -25,11 +25,11 @@ def find_interest_obtained_on_faceValue(val1, val2, val3, val4):
 
 def submit():
     try:
-        value = find_interest_obtained_on_faceValue(my_box1.get(), my_box2.get(), my_box3.get(), my_box4.get())
+        value = find_interest_obtained_on_face_value(my_box1.get(), my_box2.get(), my_box3.get(), my_box4.get())
         my_label.config(text=' '.join(value))
 
-    except:
-        my_label.config(text='Enter valid numbers')
+    except Exception as err:
+        my_label.config(text=f'Enter valid numbers\nUnexpected {err=}')
 
 
 my_label1 = Label(root, text='total_investment', font=('Roboto', 10), bg='orange')

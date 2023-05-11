@@ -22,8 +22,9 @@ def submit():
         value = find_annual_income(my_box1.get(), my_box2.get(), my_box3.get(), my_box4.get())
         my_label.config(text=' '.join(value))
 
-    except:
-        my_label.config(text='Enter valid numbers')
+    except Exception as err:
+        my_label.config(text=f'Enter valid numbers\nUnexpected {err=}')
+        # raise
 
 
 my_label1 = Label(root, text='total_investment', font=('Roboto', 10), bg='orange')
