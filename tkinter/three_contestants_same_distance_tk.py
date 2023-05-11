@@ -23,7 +23,7 @@ def three_contestants_same_distance(val1,val2,val3,val4):
     return output
 def submit():
     try:
-        value = three_contestants_same_distance(my_box1.get(),my_box2.get(),my_box3.get(),my_box4.get()  )
+        value = three_contestants_same_distance(my_box1.get(),my_box2.get(),my_box3.get(),my_box4.get())
         my_label.config(text=value)
     except:
         my_label.config(text='Enter valid numbers')

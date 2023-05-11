@@ -18,7 +18,7 @@ def find_stock_value():
 
 def find_investment():
     income1 = Fraction(input("Income1 or Earn1 or obtain1 :"))
-    investment1 = float(input("Investment1 or Stock1: "))
+    investment1 = float(input("Investment1 or Stock1 : "))
     income2 = Fraction(input("Income2 or Earn2 or obtain2 : "))
     investment2 = float((investment1 / income1) * income2)
     print("Investment2 or Stock2 :" + str(investment2))
