@@ -8,21 +8,21 @@ root.geometry('600x600')
 
 
 def clicked(value):
-    # my_label = Label(root,text=value)
-    # my_label.pack()
     if value == 2:
         # root.destroy()
         call(['python', 'average_reciprocal_tk.py'])
     elif value == 3:
         # root.destroy()
         call(['python', 'avg_of_sum_of_squares_tk.py'])
-    elif value == 3:
+    elif value == 4:
         # root.destroy()
-        call(['python', 'avg_of_sum_of_squares_tk.py'])
+        call(['python', 'mean_average_tk.py'])
+    elif value == 5:
+        # root.destroy()
+        call(['python', 'find_correct_average_tk.py'])
     elif value == 6:
         # root.destroy()
         call(['python', 'three_contestants_same_distance_tk.py'])
-
 
 
 def average():
@@ -30,7 +30,8 @@ def average():
     Radiobutton(root, text='find average', variable=v, value=1, command=lambda: clicked(v.get())).pack()
     Radiobutton(root, text='reciprocal average', variable=v, value=2, command=lambda: clicked(v.get())).pack()
     Radiobutton(root, text='avg of sum of squares', variable=v, value=3, command=lambda: clicked(v.get())).pack()
-    Radiobutton(root, text='mean average.py', variable=v, value=4, command=lambda: clicked(v.get())).pack()
+    Radiobutton(root, text='mean average', variable=v, value=4, command=lambda: clicked(v.get())).pack()
+    Radiobutton(root, text='find correct average', variable=v, value=5, command=lambda: clicked(v.get())).pack()
 
 
 def races():
@@ -59,7 +60,6 @@ def stocks():
     Radiobutton(root, text='Find find_ratios_of_investments', variable=v, value=1, command=lambda: clicked(v.get())).pack()
     Radiobutton(root, text='Find change in Income enter', variable=v, value=1, command=lambda: clicked(v.get())).pack()
     Radiobutton(root, text='Find change in Income on service charge', variable=v, value=1, command=lambda: clicked(v.get())).pack()
-
 
 
 label = Label(root, text='Aptitude Topics', font=('bold', 18))
