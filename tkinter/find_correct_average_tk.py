@@ -24,7 +24,7 @@ def submit():
         value = function1(my_box1.get(), my_box2.get(), my_box3.get(), my_box4.get())
         my_label.config(text=' '.join(value))
     except:
-        my_label.config(text='Enter valid numbers and power')
+        my_label.config(text='Enter valid numbers')
 
 
 my_label1 = Label(root, text='enter average of numbers', font=('Roboto', 10), bg='orange')

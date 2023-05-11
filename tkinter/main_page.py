@@ -70,8 +70,6 @@ def average():
                 command=lambda: average_clicked(v.get())).pack()
 
 
-
-
 def races():
     v = IntVar()
     Radiobutton(root, text='races1', variable=v, value=1,
