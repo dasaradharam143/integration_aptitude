@@ -13,6 +13,7 @@ def find_income_on_investment(val1, val2, val3):
     income2 = float((income1 * investment2) / investment1)
     output.append(f'({val2} * {val3}) / {val1}')
     output.append(f'\nincome2 : {income2} ')
+    output.append(f'\nDividend_or_interest_obtained : {income2} %')
     return output
 
 
