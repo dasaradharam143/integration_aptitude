@@ -41,10 +41,23 @@ def stocks():
     # return call(['python', 'find_average.py'])
 
     v = IntVar()
-    Radiobutton(root, text='stocks1', variable=v, value=1, command=lambda: clicked(v.get())).pack()
-    Radiobutton(root, text='stocks2', variable=v, value=2, command=lambda: clicked(v.get())).pack()
-    Radiobutton(root, text='stocks3', variable=v, value=3, command=lambda: clicked(v.get())).pack()
-    Radiobutton(root, text='stocks4', variable=v, value=4, command=lambda: clicked(v.get())).pack()
+    Radiobutton(root, text='CostPrice', variable=v, value=1, command=lambda: clicked(v.get())).pack()
+    Radiobutton(root, text='Sold Share_Value', variable=v, value=2, command=lambda: clicked(v.get())).pack()
+    Radiobutton(root, text='Investment', variable=v, value=3, command=lambda: clicked(v.get())).pack()
+    Radiobutton(root, text='Dividend', variable=v, value=4, command=lambda: clicked(v.get())).pack()
+    Radiobutton(root, text='Find_Annual_Income_/_FV', variable=v, value=1, command=lambda: clicked(v.get())).pack()
+    Radiobutton(root, text='Find Income on Investment', variable=v, value=1, command=lambda: clicked(v.get())).pack()
+    Radiobutton(root, text='Number_of_shares', variable=v, value=1, command=lambda: clicked(v.get())).pack()
+    Radiobutton(root, text='Total_Debenture', variable=v, value=1, command=lambda: clicked(v.get())).pack()
+    Radiobutton(root, text='Interest_on_faceValue', variable=v, value=1, command=lambda: clicked(v.get())).pack()
+    Radiobutton(root, text='Find_X_Part_in_total_Investment', variable=v, value=1, command=lambda: clicked(v.get())).pack()
+    Radiobutton(root, text='Find which Stock is Better', variable=v, value=1, command=lambda: clicked(v.get())).pack()
+    Radiobutton(root, text='Find Loss or gain on amount invested in bank & Stock', variable=v, value=1, command=lambda: clicked(v.get())).pack()
+    Radiobutton(root, text='Find find_maximum_return', variable=v, value=1, command=lambda: clicked(v.get())).pack()
+    Radiobutton(root, text='Find find_ratios_of_investments', variable=v, value=1, command=lambda: clicked(v.get())).pack()
+    Radiobutton(root, text='Find change in Income enter', variable=v, value=1, command=lambda: clicked(v.get())).pack()
+    Radiobutton(root, text='Find change in Income on service charge', variable=v, value=1, command=lambda: clicked(v.get())).pack()
+
 
 
 label = Label(root, text='Aptitude Topics', font=('bold', 18))
