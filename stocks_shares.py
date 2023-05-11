@@ -203,7 +203,7 @@ def find_change_in_income_on_service_charge():
 
 
 given_data = input("   CostPrice enter 1 \nor Sold Share_Value enter 2 \nor Investment enter 3 \nor Dividend enter 4 "
-                   "\nor find_Annual_Income_/_FV enter 5 \nor find Income enter 6 \nor No. of number_of_shares enter 7 "
+                   "\nor find_Annual_Income_/_FV enter 5 \nor find Income enter 6 \nor number_of_shares enter 7 "
                    "\nor Total_Debenture enter 8 \nor Interest_on_faceValue enter 9 \n"
                    "or Find_X_Part_in_total_Investment enter 10 \nor find which Stock is Better enter 11 \nor "
                    "find Loss or gain on amount invested in bank & Stock enter 12 : \n"
