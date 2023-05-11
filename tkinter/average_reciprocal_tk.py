@@ -6,11 +6,11 @@ root.geometry('600x600')
 
 
 def function1(numbers_list):
-    numbers = list(map(float,numbers_list.split()))
+    output = []
+    numbers = list(map(float, numbers_list.split()))
     b = []
     for i in numbers:
         b.append(round(1 / i, 5))
-    output=[]
     output.append('reciprocals of numbers = ' + str(b))
     total = round(sum(b), 5)
     output.append(f'\nsum of numbers {total}')
@@ -22,9 +22,9 @@ def function1(numbers_list):
 def submit():
     try:
         value = function1(my_box.get())
-        my_label.config(text=value)
+        my_label.config(text=' '.join(value))
     except:
-        my_label.config(text='Enter valid numbers and power')
+        my_label.config(text='Enter valid numbers')
 
 
 my_label1 = Label(root, text='enter numbers in denominators', font=('Roboto', 10), bg='orange')
@@ -35,7 +35,6 @@ my_box.pack()
 # creating a label
 my_label = Label(root, text='', font=('Roboto', 12), fg='black')
 my_label.pack(pady=10)
-
 
 # calling submit function
 my_button = Button(root, text="Submit", font=('roboto', 10), command=submit)

@@ -23,7 +23,7 @@ def find_mean_average(val1, val2):
 def submit():
     try:
         value = find_mean_average(my_box.get(), my_box1.get())
-        my_label.config(text=value)
+        my_label.config(text=' '.join(value))
     except:
         my_label.config(text='Enter valid numbers')
 
