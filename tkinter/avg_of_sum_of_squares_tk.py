@@ -24,7 +24,7 @@ def function1(numbers, power):
 def submit():
     try:
         value = function1(my_box.get(), my_box1.get())
-        my_label.config(text=value)
+        my_label.config(text=' '.join(value))
     except:
         my_label.config(text='Enter valid numbers and power')
 
