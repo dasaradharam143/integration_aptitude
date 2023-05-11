@@ -1,6 +1,4 @@
 from tkinter import *
-# from demo import *
-from get_name import nameit
 
 root = Tk()
 root.title('average of sum of n powers of numbers')
@@ -13,17 +11,19 @@ def power_of_n(a, n):
     return b
 
 
-#
 def function1(numbers, power):
+    output=[]
     numbers_list = map(int, numbers.split())
     total = power_of_n(numbers_list, int(power))
+    output.append(f'total sum of numbers = {total}')
     avg = sum(total) / len(total)
-    return f'total sum of numbers = {total} \n average of sum of power{power} of numbers = {sum(total)}/{len(total)} = {round(avg, 4)}'
-    # return sum(numbers_list)
+    output.append(f'\n average of sum of power{power} of numbers = {sum(total)}/{len(total)} = {round(avg, 4)}')
+    return output
+
 def submit():
     try:
-        numbers = function1(my_box.get(), my_box1.get())
-        my_label.config(text=numbers)
+        value = function1(my_box.get(), my_box1.get())
+        my_label.config(text=value)
     except:
         my_label.config(text='Enter valid numbers and power')
 

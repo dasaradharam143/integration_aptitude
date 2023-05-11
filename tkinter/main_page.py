@@ -10,16 +10,15 @@ root.geometry('600x600')
 def clicked(value):
     # my_label = Label(root,text=value)
     # my_label.pack()
-    if value == 1:
-        root.destroy()
-        call(['python', 'find_average.py'])
-    else:
-        call(['python', 'get_name.py'])
+    if value == 2:
+        # root.destroy()
+        call(['python', 'average_reciprocal_tk.py'])
+    elif value == 3:
+        # root.destroy()
+        call(['python', 'avg_of_sum_of_squares_tk.py'])
 
 
 def average():
-    # return call(['python', 'find_average.py'])
-
     v = IntVar()
     Radiobutton(root, text='find average', variable=v, value=1, command=lambda: clicked(v.get())).pack()
     Radiobutton(root, text='reciprocal average', variable=v, value=2, command=lambda: clicked(v.get())).pack()
@@ -28,8 +27,6 @@ def average():
 
 
 def races():
-    # return call(['python', 'find_average.py'])
-
     v = IntVar()
     Radiobutton(root, text='races1', variable=v, value=1, command=lambda: clicked(v.get())).pack()
     Radiobutton(root, text='races2', variable=v, value=2, command=lambda: clicked(v.get())).pack()
@@ -38,8 +35,6 @@ def races():
 
 
 def stocks():
-    # return call(['python', 'find_average.py'])
-
     v = IntVar()
     Radiobutton(root, text='Find CostPrice', variable=v, value=1, command=lambda: clicked(v.get())).pack()
     Radiobutton(root, text='Find Sold Share_Value', variable=v, value=2, command=lambda: clicked(v.get())).pack()
