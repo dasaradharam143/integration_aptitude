@@ -1,7 +1,7 @@
 from tkinter import *
 
 root = Tk()
-root.title('average of sum of n powers of numbers')
+root.title('average of reciprocal of numbers')
 root.geometry('600x600')
 
 
