@@ -16,11 +16,12 @@ def three_contestants_same_distance(val1,val2,val3,val4):
     c = B - b_beat_c
     output.append(f'\nA covered distance ={B}-{b_beat_c} = {c}')
     distance = (a / b * B / c)
-    output.append(f'distance ={a}/{b}*{B}/{c}')
+    output.append(f'\ndistance =({a}/{b})*({B}/{c})')
     a_beat_c = a - (a / distance)
-    output.append(f'\nA beat C= {a}-{a}/{distance}')
-    output.append("\nA_beat_C=" + str(a_beat_c) + 'm')
+    output.append(f'\nA beat C= {a}-{a}/{round(distance,5)}')
+    output.append(f'\nA_beat_C= {round(a_beat_c,5)} m')
     return output
+
 def submit():
     try:
         value = three_contestants_same_distance(my_box1.get(),my_box2.get(),my_box3.get(),my_box4.get()  )
