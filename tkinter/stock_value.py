@@ -7,8 +7,8 @@ root.geometry('600x600')
 
 def find_stock_value(val1, val2):
     output = []
-    selling_price = int(val1)
-    brokerage = int(val2)
+    selling_price = float(val1)
+    brokerage = float(val2)
     stock_value = float(selling_price - brokerage)
     output.append(f'{val1}-{val2}')
     output.append(f'\nstock_value : {stock_value} ')

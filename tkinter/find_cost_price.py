@@ -7,9 +7,9 @@ root.geometry('600x600')
 
 def find_cost_price(val1, val2, val3):
     output = []
-    face_value = int(val1)
-    discount = int(val2)
-    brokerage = int(val3)
+    face_value = float(val1)
+    discount = float(val2)
+    brokerage = float(val3)
     cost_price = float(face_value - discount + brokerage)
     output.append(f' {val1} - {val2} + {val3}')
     output.append(f'\nCost_Price : {cost_price}')

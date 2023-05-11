@@ -7,9 +7,9 @@ root.geometry('600x600')
 
 def find_investment_on_income(val1, val2, val3):
     output = []
-    income1 = int(val1)
-    investment1 = int(val2)
-    income2 = int(val3)
+    income1 = float(val1)
+    investment1 = float(val2)
+    income2 = float(val3)
     investment2 = float((investment1 * income2) / income1)
     output.append(f'({val2} * {val3}) / {val1}')
     output.append(f'\nInvestment2 or Stock2 : {investment2} ')
