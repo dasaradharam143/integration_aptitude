@@ -1,6 +1,4 @@
 from tkinter import *
-# from demo import *
-from get_name import nameit
 
 root = Tk()
 root.title('three contestants same distance')
