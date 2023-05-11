@@ -4,25 +4,20 @@ root = Tk()
 root.title('average of sum of n powers of numbers')
 root.geometry('600x600')
 
-def power_of_n(a, n):
-    b = []
-    for i in a:
-        b.append(i ** n)
-    return b
 
+def find_mean_average(val1, val2):
+    no_of_denominations = list(map(float, val1.split()))
+    avg_of_values = list(map(float, val2.split()))
+    total = 0
+    for i in range(len(no_of_denominations)):
+        total += no_of_denominations[i] * avg_of_values[i]
+    mean = total / sum(no_of_denominations)
+    return f'mean average = {total} / {sum(no_of_denominations)} = {round(mean, 5)}'
 
-def function1(numbers, power):
-    output=[]
-    numbers_list = map(int, numbers.split())
-    total = power_of_n(numbers_list, int(power))
-    output.append(f'total sum of numbers = {total}')
-    avg = sum(total) / len(total)
-    output.append(f'\n average of sum of power{power} of numbers = {sum(total)}/{len(total)} = {round(avg, 4)}')
-    return output
 
 def submit():
     try:
-        value = function1(my_box.get(), my_box1.get())
+        value = find_mean_average(my_box.get(), my_box1.get())
         my_label.config(text=value)
     except:
         my_label.config(text='Enter valid numbers and power')
@@ -41,7 +36,6 @@ my_box1.pack()
 # creating a label
 my_label = Label(root, text='', font=('Roboto', 12), fg='black')
 my_label.pack(pady=10)
-
 
 # calling submit function
 my_button = Button(root, text="Submit", font=('roboto', 10), command=submit)

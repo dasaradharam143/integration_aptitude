@@ -16,6 +16,13 @@ def clicked(value):
     elif value == 3:
         # root.destroy()
         call(['python', 'avg_of_sum_of_squares_tk.py'])
+    elif value == 3:
+        # root.destroy()
+        call(['python', 'avg_of_sum_of_squares_tk.py'])
+    elif value == 6:
+        # root.destroy()
+        call(['python', 'three_contestants_same_distance_tk.py'])
+
 
 
 def average():
@@ -28,8 +35,8 @@ def average():
 
 def races():
     v = IntVar()
-    Radiobutton(root, text='races1', variable=v, value=1, command=lambda: clicked(v.get())).pack()
-    Radiobutton(root, text='races2', variable=v, value=2, command=lambda: clicked(v.get())).pack()
+    Radiobutton(root, text='races1', variable=v, value=5, command=lambda: clicked(v.get())).pack()
+    Radiobutton(root, text='three contestants same distance', variable=v, value=6, command=lambda: clicked(v.get())).pack()
     Radiobutton(root, text='races3', variable=v, value=3, command=lambda: clicked(v.get())).pack()
     Radiobutton(root, text='races4', variable=v, value=4, command=lambda: clicked(v.get())).pack()
 

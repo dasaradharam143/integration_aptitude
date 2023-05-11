@@ -13,7 +13,8 @@ def power_of_n(a, n):
 
 def function1(numbers, power):
     output=[]
-    numbers_list = map(int, numbers.split())
+    numbers_list = list(map(int, numbers.split()))
+    print(numbers_list)
     total = power_of_n(numbers_list, int(power))
     output.append(f'total sum of numbers = {total}')
     avg = sum(total) / len(total)

@@ -6,7 +6,7 @@ root.geometry('600x600')
 
 
 def function1(numbers_list):
-    numbers = map(float,numbers_list.split())
+    numbers = list(map(float,numbers_list.split()))
     b = []
     for i in numbers:
         b.append(round(1 / i, 5))
