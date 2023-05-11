@@ -35,8 +35,7 @@ def average_clicked(value):
 
 def races_clicked(value):
     if value == 1:
-        # root.destroy()
-        call(['python', 'three_contestants_same_distance_tk.py'])
+        pass
     elif value == 2:
         call(['python', 'three_contestants_same_distance_tk.py'])
 
@@ -75,9 +74,9 @@ def average():
 
 def races():
     v = IntVar()
-    Radiobutton(root, text='races1', variable=v, value=5,
+    Radiobutton(root, text='races1', variable=v, value=1,
                 command=lambda: races_clicked(v.get())).pack()
-    Radiobutton(root, text='three contestants same distance', variable=v, value=8,
+    Radiobutton(root, text='three contestants same distance', variable=v, value=2,
                 command=lambda: races_clicked(v.get())).pack()
     Radiobutton(root, text='races3', variable=v, value=3,
                 command=lambda: races_clicked(v.get())).pack()
