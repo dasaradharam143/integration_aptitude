@@ -10,18 +10,26 @@ root.geometry('600x600')
 def average_clicked(value):
     if value == 1:
         # root.destroy()
-        call(['python', 'find_missing_number_in_mean_average_tk.py'])
+        call(['python', 'average_of_numbers_tk.py'])
     elif value == 2:
-        call(['python', 'average_reciprocal_tk.py'])
+        call(['python', 'total_sum_of_numbers_tk.py'])
     elif value == 3:
-        call(['python', 'avg_of_sum_of_squares_tk.py'])
+        call(['python', 'missing_numbers_from_average_tk.py'])
     elif value == 4:
-        call(['python', 'mean_average_tk.py'])
+        call(['python', 'missing_number_using_averages_tk.py'])
     elif value == 5:
-        call(['python', 'find_missing_number_in_mean_average_tk.py'])
+        call(['python', 'average_reciprocal_tk.py'])
     elif value == 6:
-        call(['python', 'find_correct_average_tk.py'])
+        call(['python', 'avg_of_sum_of_squares_tk.py'])
     elif value == 7:
+        call(['python', 'mean_average_tk.py'])
+    elif value == 8:
+        call(['python', 'find_missing_number_in_mean_average_tk.py'])
+    elif value == 9:
+        call(['python', 'find_correct_average_tk.py'])
+    elif value == 10:
+        pass
+    elif value == 11:
         pass
 
 
@@ -36,25 +44,33 @@ def races_clicked(value):
 def stocks_clicked(value):
     if value == 1:
         # root.destroy()
-        call(['python', 'three_contestants_same_distance_tk.py'])
-    elif value == 2:
-        call(['python', 'three_contestants_same_distance_tk.py'])
+        call(['python', 'stock_value.py'])
+    elif value == 7:
+        call(['python', 'find_number_of_shares.py'])
 
 
 def average():
     v = IntVar()
-    Radiobutton(root, text='average', variable=v, value=1,
+    Radiobutton(root, text='average of numbers', variable=v, value=1,
                 command=lambda: average_clicked(v.get())).pack()
-    Radiobutton(root, text='reciprocal average', variable=v, value=2,
+    Radiobutton(root, text='total sum of numbers', variable=v, value=2,
                 command=lambda: average_clicked(v.get())).pack()
-    Radiobutton(root, text='avg of sum of squares', variable=v, value=3,
+    Radiobutton(root, text='missing number from average', variable=v, value=3,
                 command=lambda: average_clicked(v.get())).pack()
-    Radiobutton(root, text='mean average', variable=v, value=4,
+    Radiobutton(root, text='missing number using averages', variable=v, value=4,
                 command=lambda: average_clicked(v.get())).pack()
-    Radiobutton(root, text='missing number in mean average', variable=v, value=5,
+    Radiobutton(root, text='average of reciprocal of numbers', variable=v, value=5,
                 command=lambda: average_clicked(v.get())).pack()
-    Radiobutton(root, text='correct average', variable=v, value=6,
+    Radiobutton(root, text='avg of sum of n powers', variable=v, value=6,
                 command=lambda: average_clicked(v.get())).pack()
+    Radiobutton(root, text='mean average', variable=v, value=7,
+                command=lambda: average_clicked(v.get())).pack()
+    Radiobutton(root, text='missing number in mean average', variable=v, value=8,
+                command=lambda: average_clicked(v.get())).pack()
+    Radiobutton(root, text='correct average', variable=v, value=9,
+                command=lambda: average_clicked(v.get())).pack()
+
+
 
 
 def races():
@@ -81,7 +97,7 @@ def stocks():
                 command=lambda: stocks_clicked(v.get())).pack()
     Radiobutton(root, text='Find_Annual_Income_/_FV', variable=v, value=5,
                 command=lambda: stocks_clicked(v.get())).pack()
-    Radiobutton(root, text='Find Income on Investment', variable=v, value=6,
+    Radiobutton(root, text='Find Income or dividend on Investment', variable=v, value=6,
                 command=lambda: stocks_clicked(v.get())).pack()
     Radiobutton(root, text='Find Number_of_shares', variable=v, value=7,
                 command=lambda: stocks_clicked(v.get())).pack()
