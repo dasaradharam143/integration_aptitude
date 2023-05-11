@@ -6,13 +6,18 @@ root.geometry('600x600')
 
 
 def find_mean_average(val1, val2):
+    output=[]
     no_of_denominations = list(map(float, val1.split()))
     avg_of_values = list(map(float, val2.split()))
     total = 0
+    total_sum = []
     for i in range(len(no_of_denominations)):
         total += no_of_denominations[i] * avg_of_values[i]
+        total_sum.append(total)
+    output.append(f'total mean sum = {total_sum}')
     mean = total / sum(no_of_denominations)
-    return f'mean average = {total} / {sum(no_of_denominations)} = {round(mean, 5)}'
+    output.append(f'\nmean average = {total} / {sum(no_of_denominations)} = {round(mean, 5)}')
+    return output
 
 
 def submit():
