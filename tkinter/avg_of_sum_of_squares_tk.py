@@ -4,6 +4,7 @@ root = Tk()
 root.title('average of sum of n powers of numbers')
 root.geometry('600x600')
 
+
 def power_of_n(a, n):
     b = []
     for i in a:
@@ -12,7 +13,7 @@ def power_of_n(a, n):
 
 
 def function1(numbers, power):
-    output=[]
+    output = []
     numbers_list = list(map(int, numbers.split()))
     print(numbers_list)
     total = power_of_n(numbers_list, int(power))
@@ -20,6 +21,7 @@ def function1(numbers, power):
     avg = sum(total) / len(total)
     output.append(f'\n average of sum of power{power} of numbers = {sum(total)}/{len(total)} = {round(avg, 4)}')
     return output
+
 
 def submit():
     try:
@@ -42,7 +44,6 @@ my_box1.pack()
 # creating a label
 my_label = Label(root, text='', font=('Roboto', 12), fg='black')
 my_label.pack(pady=10)
-
 
 # calling submit function
 my_button = Button(root, text="Submit", font=('roboto', 10), command=submit)
