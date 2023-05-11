@@ -1,5 +1,4 @@
 from tkinter import *
-
 from fractions import Fraction
 
 root = Tk()
@@ -19,7 +18,7 @@ def find_interest_obtained_on_face_value(val1, val2, val3, val4):
     interest_obtained = float(dividend * 100) / investment
 
     # output.append(f'\n({val4} / {100}) * (({val1} / {val2}) * {val3}) ')
-    output.append(f'\ninterest_obtained : {interest_obtained}')
+    output.append(f'\ninterest_obtained : {interest_obtained} %')
     return output
 
 
@@ -32,22 +31,22 @@ def submit():
         my_label.config(text=f'Enter valid numbers\nUnexpected {err=}')
 
 
-my_label1 = Label(root, text='total_investment', font=('Roboto', 10), bg='orange')
+my_label1 = Label(root, text='number_of_shares', font=('Roboto', 10), bg='orange')
 my_label1.pack(pady=10)
 my_box1 = Entry(root)
 my_box1.pack()
 
-my_label2 = Label(root, text='investment_in_one_share', font=('Roboto', 10), bg='orange')
+my_label2 = Label(root, text='each_share_value', font=('Roboto', 10), bg='orange')
 my_label2.pack(pady=10)
 my_box2 = Entry(root)
 my_box2.pack()
 
-my_label3 = Label(root, text='face_value_of_one_share', font=('Roboto', 10), bg='orange')
+my_label3 = Label(root, text='discount', font=('Roboto', 10), bg='orange')
 my_label3.pack(pady=10)
 my_box3 = Entry(root)
 my_box3.pack()
 
-my_label4 = Label(root, text='dividend', font=('Roboto', 10), bg='orange')
+my_label4 = Label(root, text='dividend_percentage', font=('Roboto', 10), bg='orange')
 my_label4.pack(pady=10)
 my_box4 = Entry(root)
 my_box4.pack()
