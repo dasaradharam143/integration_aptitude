@@ -38,6 +38,8 @@ def races_clicked(value):
         call(['python', 'members_game_tk.py'])
     elif value == 2:
         call(['python', 'three_contestants_same_distance_tk.py'])
+    elif value == 3:
+        call(['python', 'three_contestants_different_distance_tk.py'])
 
 
 def stocks_clicked(value):
@@ -105,7 +107,7 @@ def races():
                 command=lambda: races_clicked(v.get())).pack()
     Radiobutton(root, text='three contestants same distance', variable=v, value=2,
                 command=lambda: races_clicked(v.get())).pack()
-    Radiobutton(root, text='races3', variable=v, value=3,
+    Radiobutton(root, text='three contestants different distance', variable=v, value=3,
                 command=lambda: races_clicked(v.get())).pack()
     Radiobutton(root, text='races4', variable=v, value=4,
                 command=lambda: races_clicked(v.get())).pack()
