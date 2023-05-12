@@ -1,8 +1,16 @@
+import tkinter as tk
 from tkinter import *
 
 root = Tk()
 root.title('finding x numbers')
 root.geometry('600x600')
+
+
+class WrappingLabel(tk.Label):
+    """ a type of Label that automatically adjusts the wrap to the size """
+    def __init__(self, master=None, **kwargs):
+        tk.Label.__init__(self, master, **kwargs)
+        self.bind('<Configure>', lambda e: self.config(wraplength=self.winfo_width()))
 
 
 def finding_x(val1, val2, val3):
@@ -28,6 +36,7 @@ def submit():
     try:
         value = finding_x(my_box1.get(), my_box2.get(), my_box3.get())
         my_label.config(text=" ".join(value))
+        my_label.pack(expand=True, fill=tk.X)
 
     except Exception as err:
         my_label.config(text=f'Enter valid numbers\nUnexpected {err=}')
@@ -49,8 +58,8 @@ my_box3 = Entry(root)
 my_box3.pack()
 
 # creating a label
-my_label = Label(root, text='', font=('Roboto', 12), fg='black')
-my_label.pack(pady=10)
+my_label = WrappingLabel(root, text='', font=('Roboto', 12), fg='black')
+my_label.pack()
 
 # calling submit function
 my_button = Button(root, text="Submit", font=('roboto', 10), command=submit)
