@@ -102,7 +102,7 @@ def find_part_of_amount_in_total_investment():
         print("1stPart invested on total Amount : " + str(y))
 
 
-def find_better_investment_Stock():
+def find_better_investment_stock():
     first_stock_rate = Fraction(input("enter AnnualIncome on 1's share a1 : "))
     first_stock_market_value = float(input("enter Market_value b1 : "))
     second_stock_rate = Fraction(input("enter AnnualIncome on 1's share a2 : "))
@@ -125,7 +125,7 @@ def find_better_investment_Stock():
         print(str(second_stock_rate) + " Stock at " + str(second_stock_market_value) + " is better")
 
 
-def find_loss_or_gain_on_amount_invested_in_bank_and_Stock():
+def find_loss_or_gain_on_amount_invested_in_bank_and_stock():
     total_investment = float(input("Total Investment : "))
     bank_interest = float(input("interest on investment by bank : "))
     face_value = float(input("Face Value : "))
@@ -230,9 +230,9 @@ elif given_data == "9":
 elif given_data == "10":
     find_part_of_amount_in_total_investment()
 elif given_data == "11":
-    find_better_investment_Stock()
+    find_better_investment_stock()
 elif given_data == "12":
-    find_loss_or_gain_on_amount_invested_in_bank_and_Stock()
+    find_loss_or_gain_on_amount_invested_in_bank_and_stock()
 elif given_data == "13":
     find_maximum_return()
 elif given_data == "14":
