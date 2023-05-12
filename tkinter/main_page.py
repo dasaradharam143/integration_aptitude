@@ -58,7 +58,7 @@ def stocks_clicked(value):
     elif value == 8:
         call(['python', 'find_investment_on_income.py'])
     elif value == 9:
-        call(['python', 'find_interest_obtained_on_faceValue.py'])
+        call(['python', 'find_interest_obtained_on_face_value.py'])
     elif value == 10:
         call(['python', 'find_part_of_amount_in_total_investment.py'])
     elif value == 11:
@@ -72,8 +72,8 @@ def stocks_clicked(value):
     elif value == 15:
         call(['python', 'find_change_in_income_on_service_charge.py'])
     elif value == 16:
-        call(['python', ''])
         pass
+
 
 def average():
     v = IntVar()
@@ -129,7 +129,7 @@ def stocks():
                 command=lambda: stocks_clicked(v.get())).pack()
     Radiobutton(root, text='find_investment_on_income', variable=v, value=8,
                 command=lambda: stocks_clicked(v.get())).pack()
-    Radiobutton(root, text='find_interest_obtained_on_faceValu', variable=v, value=9,
+    Radiobutton(root, text='find_interest_obtained_on_face_value', variable=v, value=9,
                 command=lambda: stocks_clicked(v.get())).pack()
     Radiobutton(root, text='find_part_of_amount_in_total_investment', variable=v, value=10,
                 command=lambda: stocks_clicked(v.get())).pack()
