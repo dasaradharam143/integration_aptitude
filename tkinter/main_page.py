@@ -28,7 +28,7 @@ def average_clicked(value):
     elif value == 9:
         call(['python', 'find_correct_average_tk.py'])
     elif value == 10:
-        pass
+        call(['python', 'finding_x_tk.py'])
     elif value == 11:
         pass
 
@@ -67,6 +67,8 @@ def average():
     Radiobutton(root, text='missing number in mean average', variable=v, value=8,
                 command=lambda: average_clicked(v.get())).pack()
     Radiobutton(root, text='correct average', variable=v, value=9,
+                command=lambda: average_clicked(v.get())).pack()
+    Radiobutton(root, text='finding x numbers', variable=v, value=10,
                 command=lambda: average_clicked(v.get())).pack()
 
 
