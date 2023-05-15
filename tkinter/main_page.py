@@ -80,71 +80,75 @@ def stocks_clicked(value):
 def average():
     v = IntVar()
     Radiobutton(root, text='average of numbers', variable=v, value=1,
-                command=lambda: average_clicked(v.get())).pack()
+                command=lambda: average_clicked(v.get())).pack(anchor=W)
     Radiobutton(root, text='total sum of numbers', variable=v, value=2,
-                command=lambda: average_clicked(v.get())).pack()
+                command=lambda: average_clicked(v.get())).pack(anchor=W)
     Radiobutton(root, text='missing number from average', variable=v, value=3,
-                command=lambda: average_clicked(v.get())).pack()
+                command=lambda: average_clicked(v.get())).pack(anchor=W)
     Radiobutton(root, text='missing number using averages', variable=v, value=4,
-                command=lambda: average_clicked(v.get())).pack()
+                command=lambda: average_clicked(v.get())).pack(anchor=W)
     Radiobutton(root, text='average of reciprocal of numbers', variable=v, value=5,
-                command=lambda: average_clicked(v.get())).pack()
+                command=lambda: average_clicked(v.get())).pack(anchor=W)
     Radiobutton(root, text='avg of sum of n powers', variable=v, value=6,
-                command=lambda: average_clicked(v.get())).pack()
+                command=lambda: average_clicked(v.get())).pack(anchor=W)
     Radiobutton(root, text='mean average', variable=v, value=7,
-                command=lambda: average_clicked(v.get())).pack()
+                command=lambda: average_clicked(v.get())).pack(anchor=W)
     Radiobutton(root, text='missing number in mean average', variable=v, value=8,
-                command=lambda: average_clicked(v.get())).pack()
+                command=lambda: average_clicked(v.get())).pack(anchor=W)
     Radiobutton(root, text='correct average', variable=v, value=9,
-                command=lambda: average_clicked(v.get())).pack()
+                command=lambda: average_clicked(v.get())).pack(anchor=W)
     Radiobutton(root, text='finding x numbers', variable=v, value=10,
-                command=lambda: average_clicked(v.get())).pack()
+                command=lambda: average_clicked(v.get())).pack(anchor=W)
 
 
 def races():
     v = IntVar()
     Radiobutton(root, text='members game', variable=v, value=1,
-                command=lambda: races_clicked(v.get())).pack()
+                command=lambda: races_clicked(v.get())).pack(anchor=W)
     Radiobutton(root, text='three contestants same distance', variable=v, value=2,
-                command=lambda: races_clicked(v.get())).pack()
+                command=lambda: races_clicked(v.get())).pack(anchor=W)
     Radiobutton(root, text='three contestants different distance', variable=v, value=3,
-                command=lambda: races_clicked(v.get())).pack()
+                command=lambda: races_clicked(v.get())).pack(anchor=W)
     Radiobutton(root, text='races4', variable=v, value=4,
-                command=lambda: races_clicked(v.get())).pack()
+                command=lambda: races_clicked(v.get())).pack(anchor=W)
 
 
 def stocks():
     v = IntVar()
     Radiobutton(root, text='find_cost_price', variable=v, value=1,
-                command=lambda: stocks_clicked(v.get())).pack()
+                command=lambda: stocks_clicked(v.get())).pack(anchor=W)
     Radiobutton(root, text='find_stock_value_on_selling_price', variable=v, value=2,
-                command=lambda: stocks_clicked(v.get())).pack()
+                command=lambda: stocks_clicked(v.get())).pack(anchor=W)
     Radiobutton(root, text='find_number_of_shares', variable=v, value=3,
-                command=lambda: stocks_clicked(v.get())).pack()
+                command=lambda: stocks_clicked(v.get())).pack(anchor=W)
     Radiobutton(root, text='find_income_or_dividend_on_investment', variable=v, value=4,
-                command=lambda: stocks_clicked(v.get())).pack()
+                command=lambda: stocks_clicked(v.get())).pack(anchor=W)
     Radiobutton(root, text='find_total_investment_on_debenture', variable=v, value=5,
-                command=lambda: stocks_clicked(v.get())).pack()
+                command=lambda: stocks_clicked(v.get())).pack(anchor=W)
     Radiobutton(root, text='find_annual_income', variable=v, value=6,
-                command=lambda: stocks_clicked(v.get())).pack()
+                command=lambda: stocks_clicked(v.get())).pack(anchor=W)
     Radiobutton(root, text='find_loss_or_gain_on_amount_invested_in_bank_and_Stock', variable=v, value=7,
-                command=lambda: stocks_clicked(v.get())).pack()
+                command=lambda: stocks_clicked(v.get())).pack(anchor=W)
     Radiobutton(root, text='find_investment_on_income', variable=v, value=8,
-                command=lambda: stocks_clicked(v.get())).pack()
+                command=lambda: stocks_clicked(v.get())).pack(anchor=W)
     Radiobutton(root, text='find_interest_obtained_on_face_value', variable=v, value=9,
-                command=lambda: stocks_clicked(v.get())).pack()
+                command=lambda: stocks_clicked(v.get())).pack(anchor=W)
     Radiobutton(root, text='find_part_of_amount_in_total_investment', variable=v, value=10,
-                command=lambda: stocks_clicked(v.get())).pack()
+                command=lambda: stocks_clicked(v.get())).pack(anchor=W)
     Radiobutton(root, text='find_maximum_return', variable=v, value=11,
-                command=lambda: stocks_clicked(v.get())).pack()
+                command=lambda: stocks_clicked(v.get())).pack(anchor=W)
     Radiobutton(root, text='find_ratios_of_investments', variable=v, value=12,
-                command=lambda: stocks_clicked(v.get())).pack()
+                command=lambda: stocks_clicked(v.get())).pack(anchor=W)
     Radiobutton(root, text='find_better_investment_Stock', variable=v, value=13,
-                command=lambda: stocks_clicked(v.get())).pack()
+                command=lambda: stocks_clicked(v.get())).pack(anchor=W)
     Radiobutton(root, text='find_change_in_income', variable=v, value=14,
-                command=lambda: stocks_clicked(v.get())).pack()
+                command=lambda: stocks_clicked(v.get())).pack(anchor=W)
     Radiobutton(root, text='find_change_in_income_on_service_charge', variable=v, value=15,
-                command=lambda: stocks_clicked(v.get())).pack()
+                command=lambda: stocks_clicked(v.get())).pack(anchor=W)
+
+
+def clear_text():
+    pass
 
 
 label = Label(root, text='Aptitude Topics', font=('bold', 18))
@@ -158,5 +162,8 @@ button2.pack(pady=8)
 
 button3 = Button(root, text='3.Stocks and Shares', font=('roboto', 10), bg='sky blue', command=stocks)
 button3.pack(pady=8)
+
+# button1 = Button(root, text='clear', font=('roboto', 10), bg='sky blue', command=clear_text)
+# button1.pack()
 
 root.mainloop()
