@@ -17,8 +17,8 @@ def button_clear():
 
 
 def button_add():
-    global f_num
     current1 = e.get()
+    global f_num
     f_num = int(current1)
     e.delete(0, END)
 
